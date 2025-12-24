@@ -4,11 +4,19 @@ on:
   push:
     branches: [ main ]
 
+# Ensure Actions has permission to write repository contents (push gh-pages)
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          # keep credentials so the action can push
+          persist-credentials: true
+          fetch-depth: 0
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
