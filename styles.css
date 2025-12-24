@@ -1,9 +1,9 @@
 :root{
-  --bg:#ffffff;
-  --panel:#f8f9fa;
-  --muted:#6c757d;
-  --accent:#0d6efd;
-  --glass: rgba(0,0,0,0.03);
+  --bg:#1a1a1a;
+  --panel:#2d2d2d;
+  --muted:#a0a0a0;
+  --accent:#4a9eff;
+  --glass: rgba(255,255,255,0.05);
   --radius:12px;
   --max-width:1100px;
 }
@@ -12,12 +12,12 @@ html,body{height:100%;}
 body{
   margin:0;
   font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
-  background:linear-gradient(180deg,var(--bg),#f0f2f5);
-  color:#212529;
+  background:linear-gradient(180deg,var(--bg),#0d0d0d);
+  color:#e0e0e0;
   -webkit-font-smoothing:antialiased;
 }
 .container{max-width:var(--max-width);margin:0 auto;padding:2rem;}
-.nav{backdrop-filter: blur(6px);background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));border-bottom:1px solid rgba(0,0,0,0.1);}
+.nav{backdrop-filter: blur(6px);background:linear-gradient(180deg, rgba(26,26,26,0.95), rgba(26,26,26,0.9));border-bottom:1px solid rgba(255,255,255,0.1);}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;}
 .brand{font-weight:800;letter-spacing:0.6px;color:var(--accent)}
 .nav-links ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
@@ -34,12 +34,12 @@ section{padding:3.5rem 0}
 h2{margin-top:0}
 
 .skills .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-top:1rem}
-.card{background:var(--panel);padding:1.2rem;border-radius:var(--radius);box-shadow:0 2px 8px rgba(0,0,0,0.1);border:1px solid rgba(0,0,0,0.05)}
+.card{background:var(--panel);padding:1.2rem;border-radius:var(--radius);box-shadow:0 2px 8px rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.1)}
 .card h3{margin:0 0 0.5rem}
 .card p{margin:0;color:var(--muted)}
 
 .contact a{color:var(--accent);text-decoration:none}
-.footer{border-top:1px solid rgba(0,0,0,0.1);padding:1.2rem 0;text-align:center;color:var(--muted)}
+.footer{border-top:1px solid rgba(255,255,255,0.1);padding:1.2rem 0;text-align:center;color:var(--muted)}
 
 @media (max-width:720px){
   .hero-inner{padding:3rem 1rem;text-align:center}
